@@ -1,4 +1,4 @@
-#### > The UK Food Standards Agency evaluates various establishments across the United Kingdom, and gives them a food hygiene rating. You've been contracted by the editors of a food magazine, Eat Safe, Love, to evaluate some of the ratings data in order to help their journalists and food critics decide where to focus future articles.
+#### The UK Food Standards Agency evaluates various establishments across the United Kingdom, and gives them a food hygiene rating. You've been contracted by the editors of a food magazine, Eat Safe, Love, to evaluate some of the ratings data in order to help their journalists and food critics decide where to focus future articles.
 
 ### Part 1: Database and Jupyter Notebook Set Up
 Used [NoSQL_setup_starter.ipynb](https://github.com/skythelimitdt/nosql-challenge/blob/main/NoSQL_setup_starter.ipynb)
@@ -43,3 +43,8 @@ Some notes to be aware of while you are exploring the dataset:
 3. What are the top 5 establishments with a RatingValue of 5, sorted by lowest hygiene score, nearest to the new restaurant added, "Penang Flavours"?
 4. How many establishments in each Local Authority area have a hygiene score of 0? Sort the results from highest to lowest, and print out the top ten local authority areas.
 
+#### References
+chatgpt: Query assistance on this query: query = {
+    'RatingValue': 5,
+    'geocode.latitude': {'$gte': latitude - degree_search, '$lte': latitude + degree_search},
+    'geocode.longitude': {'$gte': longitude - degree_search, '$lte': longitude + degree_search}
