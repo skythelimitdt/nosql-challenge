@@ -4,20 +4,17 @@
 Used [NoSQL_setup_starter.ipynb](https://github.com/skythelimitdt/nosql-challenge/blob/main/NoSQL_setup_starter.ipynb)
  for this section of the challenge.
 
-1. Import the data provided in the establishments.json file from your Terminal. Name the database uk_food and the collection establishments. Copy the text you used to import your data from your Terminal to a markdown cell in your notebook.
-2. Within your notebook, import the libraries you need: PyMongo and Pretty Print (pprint).
-3. Create an instance of the Mongo Client.
-4. Confirm that you created the database and loaded the data properly:
-    5. List the databases you have in MongoDB. Confirm that uk_food is listed.
-    6. List the collection(s) in the database to ensure that establishments is there.
-    7. Find and display one document in the establishments collection using find_one and display with pprint.
-      
-8. Assign the establishments collection to a variable to prepare the collection for use.
+1. Imported the data provided in the establishments.json file from your Terminal.
+2. Named the database 'uk_food' and the collection 'establishments'. 
+3. Within the notebook, imported the libraries I needed: PyMongo and Pretty Print (pprint).
+4. Created an instance of the Mongo Client.
+5. Confirmed that I created the database and loaded the data properly.
+6. Assigned the 'establishments' collection to a variable to prepare the collection for use.
 
 ### Part 2: Update the Database
 Used [NoSQL_setup_starter.ipynb](https://github.com/skythelimitdt/nosql-challenge/blob/main/NoSQL_setup_starter.ipynb) for this section of the challenge.
 
-The magazine editors have some requested modifications for the database before you can perform any queries or analysis for them. Make the following changes to the establishments collection:
+The magazine editors have some requested modifications for the database before I could perform any queries or analysis for them. I made the following changes to the establishments collection:
 
 1. An exciting new halal restaurant just opened in Greenwich, but hasn't been rated yet. The magazine has asked you to include it in your analysis. Add the information to the database.
 2. Find the BusinessTypeID for "Restaurant/Cafe/Canteen" and return only the BusinessTypeID and BusinessType fields.
@@ -28,7 +25,7 @@ The magazine editors have some requested modifications for the database before y
     7. Use update_many to convert RatingValue to integer numbers.
 
 ### Part 3: Exploratory Analysis
-Eat Safe, Love has specific questions they want you to answer, which will help them find the locations they wish to visit and avoid.
+Eat Safe, Love has specific questions they want me to answer, which will help them find the locations they wish to visit and avoid.
 
 Used [NoSQL_analysis_starter.ipynb](https://github.com/skythelimitdt/nosql-challenge/blob/main/NoSQL_analysis_starter.ipynb)
  for this section of the challenge.
@@ -38,6 +35,7 @@ Some notes to be aware of while you are exploring the dataset:
 - RatingValue refers to the overall rating decided by the Food Authority and ranges from 1-5. The higher the value, the better the rating.
 - The scores for Hygiene, Structural, and ConfidenceInManagement work in reverse. This means, the higher the value, the worse the establishment is in these areas.
 
+**Some questions to answer:**
 1. Which establishments have a hygiene score equal to 20?
 2. Which establishments in London have a RatingValue greater than or equal to 4?
 3. What are the top 5 establishments with a RatingValue of 5, sorted by lowest hygiene score, nearest to the new restaurant added, "Penang Flavours"?
